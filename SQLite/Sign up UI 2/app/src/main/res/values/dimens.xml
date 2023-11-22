@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="size10dp">10dp</dimen>
+    <dimen name="size30dp">30dp</dimen>
+    <dimen name="headingSize">25dp</dimen>
+    <dimen name="rdbTextSize">20dp</dimen>
+</resources>

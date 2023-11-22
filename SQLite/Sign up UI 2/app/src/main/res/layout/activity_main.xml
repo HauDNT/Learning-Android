@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundSignUp"
+    tools:context=".MainActivity" >
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_above="@+id/framesignup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="@dimen/size10dp"
+        android:text="@string/title"
+        android:textAlignment="center"
+        android:textSize="@dimen/size30dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:id="@+id/framesignup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edtusername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@drawable/edtcustom"
+            android:drawableLeft="@drawable/user"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/username"
+            android:inputType="textPersonName"
+            android:padding="@dimen/size10dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"
+        />
+
+        <EditText
+            android:id="@+id/edtpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:drawableLeft="@drawable/padlock"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:padding="@dimen/size10dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"
+            android:background="@drawable/edtcustom"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/size10dp"
+            android:orientation="horizontal"
+            >
+
+            <RadioButton
+                android:id="@+id/rdbnam"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nam"
+                android:textSize="@dimen/rdbTextSize"/>
+
+            <RadioButton
+                android:id="@+id/rdbnu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ"
+                android:textSize="@dimen/rdbTextSize"/>
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/edtngaySinh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@drawable/edtcustom"
+            android:drawablePadding="10dp"
+            android:drawableLeft="@drawable/calendar"
+            android:ems="10"
+            android:hint="@string/ngaysinh"
+            android:inputType="textPersonName"
+            android:padding="@dimen/size10dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"/>
+
+        <EditText
+            android:id="@+id/edtcmnd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/size10dp"
+            android:background="@drawable/edtcustom"
+            android:drawableLeft="@drawable/id_card"
+            android:drawablePadding="10dp"
+            android:ems="10"
+            android:hint="@string/CMND"
+            android:inputType="textPersonName"
+            android:padding="@dimen/size10dp"
+            android:textColorHint="#757575"
+            android:textColor="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnaccept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Accept"
+                android:layout_margin="@dimen/size10dp"
+                android:background="@drawable/buttoncustom"/>
+
+            <Button
+                android:id="@+id/btnexit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Exit"
+                android:layout_margin="@dimen/size10dp"
+                android:background="@drawable/buttoncustom"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
